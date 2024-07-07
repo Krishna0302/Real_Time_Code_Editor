@@ -1,3 +1,5 @@
+/* Home Page Css */
+
 .homePageWrapper{
   height: 100vh;
   display: flex;
@@ -45,6 +47,7 @@
   padding: 6px;
   border-radius: 5px;
   font-size: 15px;
+  font-weight: bold;
   cursor: pointer;
   transition: all 0.3 ease-in-out;
 }
@@ -56,7 +59,7 @@
   margin-left: 160px;
 }
 
-.joinBtn:hover{
+.joinBtn:hover, .leaveBtn:hover{
   background-color: rgb(43, 6, 69);
 }
 
@@ -86,5 +89,62 @@ footer a{
   text-decoration: none;
 }
 
+/* Editor Page css */
 
+.mainWrap{
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  height: 100vh;
+}
 
+.aside{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  color: white;
+}
+
+.asideInner{
+  flex: 1;
+}
+
+.clientsList {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 13px;
+}
+
+.client {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.userName {
+  margin-top: 3px;
+}
+
+.logo{
+  border-bottom: 1px solid rgb(105, 19, 167);
+  padding-bottom: 10px;
+}
+
+.logoImage{
+  height: 60px;
+  width: 230px;
+}
+
+.leaveBtn{
+  margin-top: 10px;
+  background-color: indigo;
+  color: #fff;
+}
+
+.CodeMirror{
+  min-height: calc(100vh - 20px);
+  font-size: 20px;
+  line-height: 1.6;
+  padding-top: 20px;
+}
